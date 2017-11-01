@@ -1,0 +1,65 @@
+@import '_vars'
+
+.contact-list
+  table-layout: fixed
+  width: 100%
+  background-color: #fff
+  box-shadow: $shadow-default
+  border-collapse: collapse
+
+  // Main table styles
+  td
+    font-size: 12px
+    padding: 11px 21px
+    line-height: 1.5
+    vertical-align: top
+
+    &:first-child
+      width: 33%
+
+  thead
+    border: 1px solid #ddd
+    box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.4) 
+  
+  tbody
+    tr:hover
+      .contact-list__user-delete
+        display: block
+  
+    td
+      border: 1px solid #ddd
+
+      &:first-child
+        box-shadow: 2px 0 4px -2px rgba(0,0,0,.4)
+
+  // User styles
+  
+  &__user  
+    display: flex
+    align-items: center
+    position: relative
+    
+    &-image
+      height: 40px
+      width: 40px
+      overflow: hidden
+      background-position: center
+      background-size: cover
+      border-radius: 50%
+      margin-right: 8px
+      margin-bottom: 10px
+
+    &-delete
+      display: none
+      background-color: transparent
+      color: $yellow
+      cursor: pointer
+      position: absolute
+      left: 48px
+      padding: 0 5px
+      border: none
+      bottom: -7px
+      font-size: 12px
+      line-height: 24px
+
+

@@ -1,0 +1,64 @@
+@import '_vars'
+
+.backdrop
+  z-index: 10;
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background: rgba(0,0,0,.3)
+
+.modal
+  z-index: 11;
+  width: 460px
+  background: #f9f9f9
+  border: 1px solid #ddd
+  box-shadow: $shadow-default
+
+  &-container
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &__header
+    padding: 24px 18px
+    border-bottom: 1px solid #ddd
+    background-color: #fff
+
+    h2
+      font-size: 18px
+
+  &__body
+    padding: 30px 40px
+
+    .button
+      margin: auto
+      margin-top: 30px
+
+
+  &__label
+    display: block
+    font-size: 14px
+    font-weight: 700
+    color: #676A6C
+
+    input, textarea
+      display: block
+      width: 100%
+      margin-top: 4px
+      margin-bottom: 8px
+      min-height: 30px
+      line-height: 1.2
+      border: 1px solid #ddd
+      resize: vertical
+      padding: 4px 8px
+
+    span
+      color: #ff6200
+

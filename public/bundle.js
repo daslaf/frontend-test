@@ -568,6 +568,21 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(23);
+} else {
+  module.exports = __webpack_require__(24);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 /**
@@ -604,21 +619,6 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(23);
-} else {
-  module.exports = __webpack_require__(24);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 4 */
@@ -816,7 +816,7 @@ module.exports = emptyObject;
 
 
 
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(3);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -1111,7 +1111,7 @@ module.exports = defaults;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(3);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -1639,7 +1639,7 @@ module.exports = Cancel;
 "use strict";
 
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1649,7 +1649,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _Main = __webpack_require__(39);
 
-var _styles = __webpack_require__(62);
+var _styles = __webpack_require__(63);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -1671,7 +1671,7 @@ _reactDom2.default.render(_react2.default.createElement(_Main.Main, null), docum
  This source code is licensed under the MIT license found in the
  LICENSE file in the root directory of this source tree.
 */
-var f=__webpack_require__(5),p=__webpack_require__(6);__webpack_require__(4);var r=__webpack_require__(2);
+var f=__webpack_require__(5),p=__webpack_require__(6);__webpack_require__(4);var r=__webpack_require__(3);
 function t(a){for(var b=arguments.length-1,d="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,e=0;e<b;e++)d+="\x26args[]\x3d"+encodeURIComponent(arguments[e+1]);b=Error(d+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var u={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function v(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}v.prototype.isReactComponent={};v.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?t("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};v.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function w(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}function x(){}x.prototype=v.prototype;var y=w.prototype=new x;y.constructor=w;f(y,v.prototype);y.isPureReactComponent=!0;function z(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}var A=z.prototype=new x;A.constructor=z;f(A,v.prototype);A.unstable_isAsyncReactComponent=!0;A.render=function(){return this.props.children};
@@ -1712,7 +1712,7 @@ var objectAssign$1 = __webpack_require__(5);
 var require$$0 = __webpack_require__(7);
 var emptyObject = __webpack_require__(6);
 var invariant = __webpack_require__(4);
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(3);
 var checkPropTypes = __webpack_require__(8);
 
 /**
@@ -3454,7 +3454,7 @@ if (process.env.NODE_ENV === 'production') {
  LICENSE file in the root directory of this source tree.
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(3);__webpack_require__(4);var l=__webpack_require__(10),n=__webpack_require__(5),ba=__webpack_require__(12),ca=__webpack_require__(2),da=__webpack_require__(6),ea=__webpack_require__(13),fa=__webpack_require__(14),ha=__webpack_require__(15),ia=__webpack_require__(16);
+var aa=__webpack_require__(2);__webpack_require__(4);var l=__webpack_require__(10),n=__webpack_require__(5),ba=__webpack_require__(12),ca=__webpack_require__(3),da=__webpack_require__(6),ea=__webpack_require__(13),fa=__webpack_require__(14),ha=__webpack_require__(15),ia=__webpack_require__(16);
 function w(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:w("227");
 function ja(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}
 var ka={Namespaces:{html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},getIntrinsicNamespace:ja,getChildNamespace:function(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ja(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}},la=null,oa={};
@@ -3779,14 +3779,14 @@ if (process.env.NODE_ENV !== "production") {
 
 'use strict';
 
-var react = __webpack_require__(3);
+var react = __webpack_require__(2);
 var invariant = __webpack_require__(4);
 var ExecutionEnvironment = __webpack_require__(10);
 var _assign = __webpack_require__(5);
 var EventListener = __webpack_require__(12);
 var require$$0 = __webpack_require__(7);
 var hyphenateStyleName = __webpack_require__(30);
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(3);
 var camelizeStyleName = __webpack_require__(32);
 var performanceNow = __webpack_require__(34);
 var propTypes = __webpack_require__(36);
@@ -21255,7 +21255,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(3);
 var invariant = __webpack_require__(4);
 var warning = __webpack_require__(7);
 var assign = __webpack_require__(5);
@@ -21805,7 +21805,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(2);
+var emptyFunction = __webpack_require__(3);
 var invariant = __webpack_require__(4);
 var ReactPropTypesSecret = __webpack_require__(9);
 
@@ -21870,7 +21870,7 @@ exports.Main = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -21878,13 +21878,15 @@ var _axios = __webpack_require__(40);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _SearchBar = __webpack_require__(59);
-
-var _NewContact = __webpack_require__(60);
+var _AddNewContact = __webpack_require__(62);
 
 var _ContactList = __webpack_require__(61);
 
-var _AddNewContact = __webpack_require__(67);
+var _Paginator = __webpack_require__(69);
+
+var _SearchBar = __webpack_require__(59);
+
+var _UserService = __webpack_require__(68);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21905,18 +21907,26 @@ var Main = exports.Main = function (_React$Component) {
     // Bind `this` to class methods
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
 
-    _this.handleInputChange = _this.handleInputChange.bind(_this);
-    _this.onCreateContact = _this.onCreateContact.bind(_this);
+    _this.onInputChange = _this.onInputChange.bind(_this);
+    _this.createContact = _this.createContact.bind(_this);
     _this.onDeleteUser = _this.onDeleteUser.bind(_this);
     _this.onDismissModal = _this.onDismissModal.bind(_this);
+    _this.onPageChange = _this.onPageChange.bind(_this);
     _this.onUserSubmit = _this.onUserSubmit.bind(_this);
 
     // Set initial state 
     _this.state = {
-      query: '',
-      users: [],
-      modal: false
-    };
+      query: '', // search text query
+      users: [], // collection of fetched users
+      modal: false, // wether there's more data to get
+      currentPage: 1, // number of currently selected page
+      isExhausted: false, // wether the data service has been exhausted
+      itemsPerPage: 5, // number of items to show per page
+      totalPages: 1 // total number of pages
+
+
+      // Creates instance of UserService
+    };_this.userService = new _UserService.UserService();
     return _this;
   }
 
@@ -21926,20 +21936,37 @@ var Main = exports.Main = function (_React$Component) {
       var _this2 = this;
 
       // Get all users
-      _axios2.default.get('/api/users').then(function (res) {
-        var users = res.data;
-        // Save response to users in state
-        _this2.setState(function (prevState) {
-          return {
-            users: users
-          };
+      this.userService.getUsers().then(function (res) {
+        var users = res.data,
+            isExhausted = res.isExhausted;
+
+        var totalPages = _this2.userService.getNumberOfPages(users.length, _this2.state.itemsPerPage);
+
+        _this2.setState({
+          users: users,
+          isExhausted: isExhausted,
+          totalPages: totalPages
         });
       });
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this3 = this;
+      var _state = this.state,
+          currentPage = _state.currentPage,
+          itemsPerPage = _state.itemsPerPage,
+          isExhausted = _state.isExhausted,
+          query = _state.query,
+          totalPages = _state.totalPages,
+          users = _state.users;
+
+
+      var pageStart = (currentPage - 1) * itemsPerPage;
+      var pageEnd = pageStart + itemsPerPage;
+
+      var filteredUsers = users.filter(function (user) {
+        return user.name.toLowerCase().includes(query.toLowerCase());
+      }).slice(pageStart, pageEnd);
 
       return _react2.default.createElement(
         'div',
@@ -21958,23 +21985,31 @@ var Main = exports.Main = function (_React$Component) {
           'div',
           { className: 'top' },
           _react2.default.createElement(_SearchBar.SearchBar, {
-            query: this.state.query,
-            onInputChange: this.handleInputChange
+            query: query,
+            inputChange: this.onInputChange
           }),
-          _react2.default.createElement(_NewContact.NewContact, {
-            createContact: this.onCreateContact
-          })
+          _react2.default.createElement(
+            'button',
+            { className: 'button', onClick: this.createContact },
+            _react2.default.createElement('i', { className: 'button__icon icon-plus-circle' }),
+            'Nuevo Contacto'
+          )
         ),
         _react2.default.createElement(
           'div',
           { className: 'bottom' },
           _react2.default.createElement(_ContactList.ContactList, {
-            users: this.state.users.filter(function (user) {
-              return user.name.includes(_this3.state.query);
-            }),
+            users: filteredUsers,
             deleteUser: this.onDeleteUser
+          }),
+          _react2.default.createElement(_Paginator.Paginator, {
+            currentPage: currentPage,
+            pageChange: this.onPageChange,
+            totalPages: totalPages
           })
         ),
+
+        /* Modal with user creation form */
         this.state.modal ? _react2.default.createElement(_AddNewContact.AddNewContact, {
           dismissModal: this.onDismissModal,
           submitUser: this.onUserSubmit
@@ -21982,11 +22017,19 @@ var Main = exports.Main = function (_React$Component) {
       );
     }
 
+    // Shows modal
+
+  }, {
+    key: 'createContact',
+    value: function createContact() {
+      this.setState({ modal: true });
+    }
+
     /* Update state on SearchBar input change */
 
   }, {
-    key: 'handleInputChange',
-    value: function handleInputChange(event) {
+    key: 'onInputChange',
+    value: function onInputChange(event) {
       this.setState(function (prevState) {
         return {
           query: event
@@ -21994,64 +22037,94 @@ var Main = exports.Main = function (_React$Component) {
       });
     }
 
-    /* */
-
-  }, {
-    key: 'onCreateContact',
-    value: function onCreateContact() {
-      this.setState({ modal: true });
-    }
-
-    /* Deletes user and updates component state */
+    // Deletes user and updates component state
 
   }, {
     key: 'onDeleteUser',
     value: function onDeleteUser(id) {
-      var _this4 = this;
+      var _this3 = this;
 
-      _axios2.default.delete('/api/users/' + id).then(function (res) {
+      this.userService.deleteUser(id).then(function (res) {
         // If success
         if (res.status === 200) {
+          var totalPages = _this3.userService.getNumberOfPages(_this3.state.users.length - 1, _this3.state.itemsPerPage);
           // Update users in view, manually filtering the users list
-          _this4.setState(function (prevState) {
+          _this3.setState(function (prevState) {
             return {
               users: prevState.users.filter(function (user) {
                 return user.id !== id;
-              })
+              }),
+              currentPage: Math.min(totalPages, _this3.state.currentPage),
+              totalPages: totalPages
             };
           });
         }
       });
     }
 
-    /* Dismiss modal & destroys Modal component */
+    // Dismiss & destroy modal component
 
   }, {
     key: 'onDismissModal',
     value: function onDismissModal(event) {
       this.setState({ modal: false });
     }
+
+    // When user changes a page 
+
+  }, {
+    key: 'onPageChange',
+    value: function onPageChange(page) {
+      var _this4 = this;
+
+      // Check if next page will be a new page
+      var isNewPage = page > this.state.totalPages;
+
+      // If we're trying to fetch a new page and service hasn't been exhausted yet
+      if (isNewPage && !this.state.isExhausted) {
+        this.userService.getUsers(page, this.state.itemsPerPage).then(function (res) {
+          // If response is 'empty'
+          if (res.data.length === 0) {
+            _this4.setState({
+              isExhausted: res.isExhausted
+            });
+          } else {
+            // Append new fetched data 
+            _this4.setState(function (prevState) {
+              return {
+                users: [].concat(_toConsumableArray(prevState.users), _toConsumableArray(res.data)),
+                currentPage: page,
+                isExhausted: res.isExhausted,
+                totalPages: page
+              };
+            });
+          }
+        });
+      } else {
+        // If all data has been fetched => update currentPage
+        this.setState({
+          currentPage: page
+        });
+      }
+    }
+
+    // When a new contact is created 
+
   }, {
     key: 'onUserSubmit',
     value: function onUserSubmit(data) {
       var _this5 = this;
 
-      var payload = JSON.stringify(data);
-
-      // console.log('creating user', payload, {
-      //   headers: { "Content-Type": "application/json" }
-      // });
-      _axios2.default.post('/api/users', payload, {
-        headers: { "Content-Type": "application/json" }
-      }).then(function (res) {
+      // Pass Content-Type header to request
+      this.userService.createUser(data).then(function (res) {
         if (res.status === 201) {
-          console.log('user succesfully added', res);
-
           var newUser = res.data;
-          // Update users in view, manually filtering the users list
+          var totalPages = _this5.userService.getNumberOfPages(_this5.state.users.length + 1, _this5.state.itemsPerPage);
+
           _this5.setState(function (prevState) {
             return {
-              users: [].concat(_toConsumableArray(prevState.users), [newUser])
+              users: [newUser].concat(_toConsumableArray(prevState.users)),
+              totalPages: totalPages
             };
           });
         }
@@ -22966,7 +23039,7 @@ exports.SearchBar = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23012,7 +23085,7 @@ var SearchBar = exports.SearchBar = function (_React$Component) {
     key: "handleInputChange",
     value: function handleInputChange(event) {
       // Lift state up on change
-      this.props.onInputChange(event.target.value);
+      this.props.inputChange(event.target.value);
     }
   }]);
 
@@ -23020,64 +23093,7 @@ var SearchBar = exports.SearchBar = function (_React$Component) {
 }(_react2.default.Component);
 
 /***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.NewContact = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var NewContact = exports.NewContact = function (_React$Component) {
-  _inherits(NewContact, _React$Component);
-
-  function NewContact(props) {
-    _classCallCheck(this, NewContact);
-
-    var _this = _possibleConstructorReturn(this, (NewContact.__proto__ || Object.getPrototypeOf(NewContact)).call(this, props));
-
-    _this.createContact = _this.createContact.bind(_this);
-    return _this;
-  }
-
-  _createClass(NewContact, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "button",
-        { className: "button", onClick: this.createContact },
-        _react2.default.createElement("i", { className: "button__icon icon-plus-circle" }),
-        "Nuevo Contacto"
-      );
-    }
-  }, {
-    key: "createContact",
-    value: function createContact() {
-      this.props.createContact();
-    }
-  }]);
-
-  return NewContact;
-}(_react2.default.Component);
-
-/***/ }),
+/* 60 */,
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23091,7 +23107,7 @@ exports.ContactList = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23209,16 +23225,6 @@ var ContactList = exports.ContactList = function (_React$Component) {
 
 /***/ }),
 /* 62 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23231,7 +23237,7 @@ exports.AddNewContact = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23377,12 +23383,203 @@ var AddNewContact = exports.AddNewContact = function (_React$Component) {
   }, {
     key: 'submitUser',
     value: function submitUser() {
-      this.props.submitUser(this.state);
+      var payload = this.state;
+
+      // if provided photo url is not an image, replace it
+      if (payload.photo.match(/\.(jpeg|jpg|gif|png)$/) == null) {
+        payload = Object.assign({}, this.state, { photo: "https://d3n8a8pro7vhmx.cloudfront.net/themes/57d734b533893fddfc000001/attachments/original/1473881108/default-profile-pic.jpg?1473881108" });
+      }
+
+      this.props.submitUser(payload);
       this.dismissModal();
     }
   }]);
 
   return AddNewContact;
+}(_react2.default.Component);
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UserService = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _axios = __webpack_require__(40);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var UserService = exports.UserService = function () {
+  function UserService() {
+    _classCallCheck(this, UserService);
+  }
+
+  // Get all users
+
+
+  _createClass(UserService, [{
+    key: 'getUsers',
+    value: function getUsers(page, limit) {
+      var endpoint = typeof page === 'number' && typeof page === 'number' ? '/api/users?_page=' + page + '&_limit=' + limit : '/api/users';
+
+      return _axios2.default.get(endpoint).then(function (res) {
+        return (
+          // patch response to notify if there's no more data to get
+          Object.assign({}, res, {
+            isExhausted: res.data.length < limit
+          })
+        );
+      });
+    }
+  }, {
+    key: 'createUser',
+    value: function createUser(data) {
+      var payload = JSON.stringify(data);
+      var headers = { "Content-Type": "application/json" };
+
+      return _axios2.default.post('/api/users', payload, { headers: headers });
+    }
+  }, {
+    key: 'deleteUser',
+    value: function deleteUser(id) {
+      return _axios2.default.delete('/api/users/' + id);
+    }
+  }, {
+    key: 'getNumberOfPages',
+    value: function getNumberOfPages(totalItems, itemsPerPage) {
+      var pages = totalItems < itemsPerPage ? 1 : totalItems % itemsPerPage ? Math.floor(totalItems / itemsPerPage) + 1 : totalItems / itemsPerPage;
+
+      return pages;
+    }
+  }]);
+
+  return UserService;
+}();
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Paginator = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Paginator = exports.Paginator = function (_React$Component) {
+  _inherits(Paginator, _React$Component);
+
+  function Paginator(props) {
+    _classCallCheck(this, Paginator);
+
+    var _this = _possibleConstructorReturn(this, (Paginator.__proto__ || Object.getPrototypeOf(Paginator)).call(this, props));
+
+    _this.goToPage = _this.goToPage.bind(_this);
+    return _this;
+  }
+
+  _createClass(Paginator, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          currentPage = _props.currentPage,
+          totalPages = _props.totalPages;
+
+
+      var pages = new Array(totalPages).fill("").map(function (item, index) {
+        return index + 1;
+      });
+
+      return _react2.default.createElement(
+        "div",
+        { className: "paginator" },
+        _react2.default.createElement(
+          "button",
+          {
+            className: "button button--link",
+            onClick: function onClick() {
+              return _this2.goToPage(currentPage - 1);
+            },
+            disabled: currentPage == 1 },
+          _react2.default.createElement("i", { className: "button__icon icon-arrow-circle-left" }),
+          "P\xE1gina anterior"
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "paginator__pages" },
+          pages.map(function (page, index) {
+            return _react2.default.createElement(
+              "button",
+              {
+                key: index,
+                onClick: function onClick() {
+                  return _this2.goToPage(index + 1);
+                },
+                className: currentPage === index + 1 ? "active paginator__page" : "paginator__page" },
+              page
+            );
+          })
+        ),
+        _react2.default.createElement(
+          "button",
+          {
+            className: "button button--link",
+            onClick: function onClick() {
+              return _this2.goToPage(currentPage + 1);
+            },
+            disabled: currentPage === totalPages },
+          "Siguiente p\xE1gina",
+          _react2.default.createElement("i", { className: "button__icon icon-arrow-circle-right" })
+        )
+      );
+    }
+  }, {
+    key: "goToPage",
+    value: function goToPage(page) {
+      this.props.pageChange(page);
+    }
+  }]);
+
+  return Paginator;
 }(_react2.default.Component);
 
 /***/ })

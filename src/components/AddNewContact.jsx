@@ -84,7 +84,14 @@ export class AddNewContact extends React.Component {
   }
 
   submitUser() {
-    this.props.submitUser(this.state);
+    let payload = this.state;
+    
+    // if provided photo url is not an image, replace it
+    if ( payload.photo.match(/\.(jpeg|jpg|gif|png)$/) == null ) {
+      payload = Object.assign({}, this.state, { photo: "https://d3n8a8pro7vhmx.cloudfront.net/themes/57d734b533893fddfc000001/attachments/original/1473881108/default-profile-pic.jpg?1473881108" })
+    }
+    
+    this.props.submitUser(payload);
     this.dismissModal();
   }
 }

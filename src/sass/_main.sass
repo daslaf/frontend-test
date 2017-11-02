@@ -3,7 +3,6 @@
 .hello
   font-size: 20px
   font-weight: 300
-  margin-top: 24px
 
 .top
   display: flex
@@ -13,12 +12,13 @@
   margin-bottom: 24px
 
 .button
-  display: flex
+  display: inline-flex
+  cursor: pointer
   align-items: center
   padding: 9px 18px
   border: none
   border-radius: 3px
-  background: $yellow
+  background-color: $yellow
   color: #fff
   font-size: 14px
   min-width: 160px
@@ -27,3 +27,27 @@
   &__icon
     font-size: 16px
     margin-right: 10px
+
+    .button--link &
+      color: $yellow
+      margin-left: 10px
+
+  &--link
+    padding: 9px 0
+    min-width: auto
+    background-color: transparent
+    color: #616161
+
+    &:hover
+      background: rgba(0,0,0,.1)
+
+    &[disabled]
+      pointer-events: none;
+      color: #999
+
+      .button__icon
+        color: #999
+
+
+
+

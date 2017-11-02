@@ -26,6 +26,6 @@ export class SearchBar extends React.Component {
 
   handleInputChange(event) {
     // Lift state up on change
-    this.props.onInputChange(event.target.value);
+    this.props.inputChange(event.target.value);
   }
 }
